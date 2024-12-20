@@ -1,22 +1,26 @@
-import { title } from "@/components/primitives";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+
+import { title } from "@/components/primitives";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 export default function ProjectsPage() {
   return (
     <div className="space-y-16 px-4 sm:px-8 lg:px-16 min-h-screen bg-transparent">
       {/* Header Section */}
       <header className="text-center">
-        <h1 className={`${title()} text-4xl font-extrabold text-gray-800 dark:text-gray-100`}>
+        <h1
+          className={`${title()} text-4xl font-extrabold text-gray-800 dark:text-gray-100`}
+        >
           Todos Nuestros Proyectos
         </h1>
         <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Nos enfocamos en cada detalle para asegurar que tu presencia en línea refleje la esencia
-          de tu marca y ofrezca una experiencia de usuario inolvidable.
+          Nos enfocamos en cada detalle para asegurar que tu presencia en línea
+          refleje la esencia de tu marca y ofrezca una experiencia de usuario
+          inolvidable.
         </p>
         <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
-          Ya sea que necesites un sitio web corporativo, una tienda en línea robusta o una
-          plataforma interactiva, estamos aquí para ayudarte a alcanzar tus objetivos con eficiencia
-          y estilo.
+          Ya sea que necesites un sitio web corporativo, una tienda en línea
+          robusta o una plataforma interactiva, estamos aquí para ayudarte a
+          alcanzar tus objetivos con eficiencia y estilo.
         </p>
       </header>
 
@@ -27,8 +31,12 @@ export default function ProjectsPage() {
         ))}
       </section>
       <div className="flex flex-col items-center space-y-2 p-4">
-        <span className="text-4xl font-semibold text-gray-800 animate-pulse">Creamos</span>
-        <span className="text-4xl font-semibold text-blue-600 animate-pulse">Tus Ideas</span>
+        <span className="text-4xl font-semibold text-gray-800 animate-pulse">
+          Creamos
+        </span>
+        <span className="text-4xl font-semibold text-blue-600 animate-pulse">
+          Tus Ideas
+        </span>
       </div>
     </div>
   );
@@ -40,7 +48,6 @@ function ProjectCard({
   category,
   location,
   link,
-  imageUrl,
 }: {
   name: string;
   category: string;
@@ -50,14 +57,10 @@ function ProjectCard({
 }) {
   return (
     <div className="p-6 bg-transparent rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
-      <div className="h-64 bg-transparent rounded-lg mb-4 overflow-hidden">
-        <img
-          src={imageUrl}
-          alt={name}
-          className="w-full h-full object-cover object-center"
-        />
-      </div>
-      <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{name}</h2>
+      <div className="h-64 bg-transparent rounded-lg mb-4 overflow-hidden" />
+      <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+        {name}
+      </h2>
       <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
         <strong>Categoría:</strong> {category}
       </p>
@@ -65,18 +68,16 @@ function ProjectCard({
         <strong>Ubicación:</strong> {location}
       </p>
       <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
         className="mt-4 inline-flex items-center text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 transition"
+        href={link}
+        rel="noopener noreferrer"
+        target="_blank"
       >
         Ver Sitio Web
         <ArrowTopRightOnSquareIcon className="w-5 h-5 ml-1" />
       </a>
       <FloatingWhatsAppButton />
     </div>
-    
-    
   );
 }
 
@@ -101,21 +102,24 @@ const projects = [
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=ProClean+Support+Services",
+    imageUrl:
+      "https://via.placeholder.com/400x300.png?text=ProClean+Support+Services",
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Biomedia+Marketing+Medico",
+    imageUrl:
+      "https://via.placeholder.com/400x300.png?text=Biomedia+Marketing+Medico",
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Diseñadora+Ana+Villamañan",
+    imageUrl:
+      "https://via.placeholder.com/400x300.png?text=Diseñadora+Ana+Villamañan",
   },
   {
     name: "Lorem",
@@ -129,7 +133,8 @@ const projects = [
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=STX+Dispatch+Center",
+    imageUrl:
+      "https://via.placeholder.com/400x300.png?text=STX+Dispatch+Center",
   },
   {
     name: "Lorem",
@@ -164,7 +169,8 @@ const projects = [
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=DigitalTree+Marketing",
+    imageUrl:
+      "https://via.placeholder.com/400x300.png?text=DigitalTree+Marketing",
   },
   {
     name: "Lorem",
@@ -185,7 +191,7 @@ const projects = [
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Knickerbocker+Bagel",
+    imageUrl:
+      "https://via.placeholder.com/400x300.png?text=Knickerbocker+Bagel",
   },
 ];
-

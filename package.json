@@ -2,6 +2,7 @@
 	"name": "next-app-template",
 	"version": "0.0.1",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
@@ -24,6 +25,7 @@
 		"@react-aria/ssr": "3.9.7",
 		"@react-aria/visually-hidden": "3.8.18",
 		"clsx": "2.1.1",
+		"emailjs-com": "^3.2.0",
 		"font-awesome": "^4.7.0",
 		"framer-motion": "11.13.1",
 		"intl-messageformat": "^10.5.0",
@@ -32,7 +34,8 @@
 		"next-themes": "^0.4.4",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
-		"react-icons": "^5.4.0"
+		"react-icons": "^5.4.0",
+		"rimraf": "^6.0.1"
 	},
 	"devDependencies": {
 		"@next/eslint-plugin-next": "15.0.4",
