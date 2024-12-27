@@ -226,7 +226,7 @@ export default function Home() {
             alt="Mockup"
             className="rounded-lg shadow-lg transform transition-all duration-500 ease-in-out hover:scale-105"
             height={550}
-            src="/npc.jpg"
+            src="/npc.png"
             width={450}
           />
         </div>
