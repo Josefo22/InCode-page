@@ -141,6 +141,20 @@ const ContactPage = () => {
           mejor valor por tu inversión.
         </p>
       </section>
+       {/* Secciones Adicionales */}
+       <section className="space-y-8">
+        <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 text-center">
+          <FaLaptopCode
+            className="inline-block text-yellow-600 dark:text-yellow-400"
+            size={30}
+          />
+          Experiencia Personalizada y a la Medida
+        </h2>
+        <p className="text-lg text-gray-700 dark:text-gray-300 text-center">
+          Nos aseguramos de entender tus necesidades específicas para ofrecerte
+          una solución web completamente personalizada.
+        </p>
+      </section>
 
       <FloatingWhatsAppButton />
 
@@ -259,20 +273,7 @@ const ContactPage = () => {
         </form>
       </section>
 
-      {/* Secciones Adicionales */}
-      <section className="space-y-8">
-        <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 text-center">
-          <FaLaptopCode
-            className="inline-block text-yellow-600 dark:text-yellow-400"
-            size={30}
-          />
-          Experiencia Personalizada y a la Medida
-        </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300 text-center">
-          Nos aseguramos de entender tus necesidades específicas para ofrecerte
-          una solución web completamente personalizada.
-        </p>
-      </section>
+     
 
       {/* Información de Contacto */}
       <section className="space-y-6 text-center px-4 sm:px-6 lg:px-8">

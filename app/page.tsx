@@ -68,7 +68,7 @@ export default function Home() {
           </Link>
           <Link
             isExternal
-            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-pink-700 transition-all"
+            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all"
             href="https://www.instagram.com/incode22/"
           >
             <FaInstagram size={24} />
@@ -99,8 +99,9 @@ export default function Home() {
                 <Image
                   alt="Sitio Institucional"
                   height={48}
-                  src="/Logo Incode.svg"
+                  src="/Logo Incode.jpg"
                   width={48}
+                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                 />
                 <h3 className="text-2xl font-bold">Sitio Institucional</h3>
               </div>
@@ -126,8 +127,9 @@ export default function Home() {
                 <Image
                   alt="Landing Page"
                   height={48}
-                  src="/Logo Incode.svg"
+                  src="/Logo Incode.jpg"
                   width={48}
+                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                 />
                 <h3 className="text-2xl font-bold">Landing Page</h3>
               </div>
@@ -151,8 +153,9 @@ export default function Home() {
                 <Image
                   alt="Tienda Online"
                   height={48}
-                  src="/Logo Incode.svg"
+                  src="/Logo Incode.jpg"
                   width={48}
+                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                 />
                 <h3 className="text-2xl font-bold">Tienda Online</h3>
               </div>
@@ -309,7 +312,7 @@ export default function Home() {
                 <Image
                   alt="JavaScript"
                   height={48}
-                  src="/assets/javascript-logo.svg" // Agrega el logo de JavaScript aquí
+                  src="./Logos/javascript.svg" // Agrega el logo de JavaScript aquí
                   width={48}
                 />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
@@ -329,7 +332,7 @@ export default function Home() {
                 <Image
                   alt="TypeScript"
                   height={48}
-                  src="/assets/typescript-logo.svg" // Agrega el logo de TypeScript aquí
+                  src="./Logos/typescript.svg" // Agrega el logo de TypeScript aquí
                   width={48}
                 />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
@@ -349,7 +352,7 @@ export default function Home() {
                 <Image
                   alt="React"
                   height={48}
-                  src="/assets/react-logo.svg" // Agrega el logo de React aquí
+                  src="./Logos/react.svg" // Agrega el logo de React aquí
                   width={48}
                 />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
@@ -369,7 +372,7 @@ export default function Home() {
                 <Image
                   alt="Node.js"
                   height={48}
-                  src="/assets/nodejs-logo.svg" // Agrega el logo de Node.js aquí
+                  src="./Logos/nodejs.svg" // Agrega el logo de Node.js aquí
                   width={48}
                 />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
@@ -388,7 +391,7 @@ export default function Home() {
                 <Image
                   alt="Tailwind CSS"
                   height={48}
-                  src="/assets/tailwindcss-logo.svg" // Agrega el logo de Tailwind CSS aquí
+                  src="./Logos/tailwind.svg" // Agrega el logo de Tailwind CSS aquí
                   width={48}
                 />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
@@ -407,7 +410,7 @@ export default function Home() {
                 <Image
                   alt="PostgreSQL"
                   height={48}
-                  src="/assets/postgresql-logo.svg" // Agrega el logo de PostgreSQL aquí
+                  src="./Logos/postgresql.svg" // Agrega el logo de PostgreSQL aquí
                   width={48}
                 />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">

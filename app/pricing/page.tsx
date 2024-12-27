@@ -1,7 +1,7 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-
 import { title } from "@/components/primitives";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+
 export default function ProjectsPage() {
   return (
     <div className="space-y-16 px-4 sm:px-8 lg:px-16 min-h-screen bg-transparent">
@@ -48,6 +48,7 @@ function ProjectCard({
   category,
   location,
   link,
+  imageUrl,
 }: {
   name: string;
   category: string;
@@ -57,7 +58,18 @@ function ProjectCard({
 }) {
   return (
     <div className="p-6 bg-transparent rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
-      <div className="h-64 bg-transparent rounded-lg mb-4 overflow-hidden" />
+      <div className="h-42 bg-transparent rounded-lg mb-4 overflow-hidden">
+        <picture>
+          <source srcSet={`${imageUrl}.webp`} type="image/webp" />
+          <source srcSet={`${imageUrl}.png`} type="image/png" />
+          <img
+            alt={name}
+            className="w-full h-full object-cover rounded-lg"
+            src={`${imageUrl}.png`} // Fallback en caso de que no se cargue ninguno de los anteriores
+          />
+        </picture>
+      </div>
+
       <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
         {name}
       </h2>
@@ -88,110 +100,104 @@ const projects = [
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Yerba+Mate+Oñoiru",
+    imageUrl: "./Mockups/WebMockup8", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Tienda Online",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Tiny+Colors+Corp",
+    imageUrl: "./Mockups/smartmockups_m0oaalts", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl:
-      "https://via.placeholder.com/400x300.png?text=ProClean+Support+Services",
+    imageUrl: "./Mockups/smartmockups_m0oaaxwa", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Biomedia+Marketing+Medico",
+    imageUrl: "./Mockups/smartmockups_m0oabj2a", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Diseñadora+Ana+Villamañan",
+    imageUrl: "./Mockups/smartmockups_m0oabue8-_1_", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Gastronomate",
+    imageUrl: "./Mockups/smartmockups_m0obi0k4-_1_", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl:
-      "https://via.placeholder.com/400x300.png?text=STX+Dispatch+Center",
+    imageUrl: "./Mockups/WebMockup1", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Estudio+Jurídico",
+    imageUrl: "./Mockups/WebMockup10", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Carlos+Lapuerta",
+    imageUrl: "./Mockups/WebMockup11", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Montique+Cleaning",
+    imageUrl: "./Mockups/WebMockup2", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Gerbos+Art",
+    imageUrl: "./Mockups/WebMockup3", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl:
-      "https://via.placeholder.com/400x300.png?text=DigitalTree+Marketing",
+    imageUrl: "./Mockups/WebMockup4", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Landing Page",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Best+Space+Agency",
+    imageUrl: "./Mockups/WebMockup5", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=DagChile",
+    imageUrl: "./Mockups/WebMockup6", // Sin extensión
   },
   {
     name: "Lorem",
     category: "Sitio Corporativo",
     location: "Medellín, Antioquia",
     link: "#",
-    imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Knickerbocker+Bagel",
+    imageUrl: "./Mockups/WebMockup7", // Sin extensión
   },
 ];
