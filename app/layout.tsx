@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
+
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
@@ -28,7 +28,11 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html suppressHydrationWarning lang="en">
       {/* Head and Meta Information */}
@@ -36,15 +40,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         {/* Theme Providers (e.g., light/dark theme) */}
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          
           {/* Layout Container */}
           <div className="relative flex flex-col h-screen">
-
             {/* Navbar */}
             <Navbar />
 
@@ -54,16 +56,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </main>
 
             {/* Footer */}
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">InCode</p>
-              </Link>
+            <footer className="w-full py-6 bg-gray-900 text-white flex items-center justify-center shadow-lg dark:bg-gray-800 dark:text-gray-300">
+              <div className="flex items-center gap-2 hover:text-blue-400 transition-all duration-300">
+                <span className="text-gray-400">Powered by</span>
+                <p className="font-semibold text-primary dark:text-blue-400">
+                  InCode
+                </p>
+              </div>
             </footer>
           </div>
         </Providers>

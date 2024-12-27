@@ -193,8 +193,8 @@ export default function Home() {
             <strong className="text-gray-900 dark:text-gray-100">
               Experiencia Comprobada:
             </strong>{" "}
-            Nuestro equipo tiene años de experiencia en WordPress y soluciones
-            personalizadas.
+            Nuestro equipo tiene años de experiencia en creación web y
+            soluciones personalizadas.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             <strong className="text-gray-900 dark:text-gray-100">
@@ -220,67 +220,212 @@ export default function Home() {
         </div>
 
         {/* Imagen del mockup a la derecha */}
-        <div className="flex-1 mt-8 md:mt-0" />
+
+        <div className="flex-1 mt-8 md:mt-0">
+          <Image
+            alt="Mockup"
+            className="rounded-lg shadow-lg transform transition-all duration-500 ease-in-out hover:scale-105"
+            height={550}
+            src="/npc.jpg"
+            width={450}
+          />
+        </div>
       </section>
+
       <section className="flex flex-col md:flex-row items-center py-16 px-4">
-        {/* Contenido de texto a la izquierda */}
+        {/* Texto a la izquierda */}
         <div className="flex-1 text-left pr-8">
           <h2 className="text-3xl font-bold text-blue-500 mb-4 dark:text-blue-400">
             Estamos en cada detalle
           </h2>
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+          <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
             Nuestros clientes lo dicen
           </h3>
 
-          <div className="mb-12">
-            <blockquote className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-              <p className="italic">
-                “Necesitábamos un rediseño completo de nuestro sitio web en
-                Barcelona y Macweb hizo un trabajo fantástico. El nuevo diseño
-                no solo es visualmente atractivo, sino que también mejora la
-                experiencia del usuario y refleja nuestros valores ecológicos a
-                la perfección. Ya estamos viendo un aumento en las visitas y
-                ventas a través de la web.”
-              </p>
-              <footer className="mt-4 font-semibold">
-                Alejandro - Barcelona, España
-              </footer>
-            </blockquote>
-          </div>
+          <p className="text-base text-gray-700 dark:text-gray-300 mb-6">
+            Nos complace compartir algunos comentarios de nuestros clientes
+            satisfechos. Con nuestra ayuda, muchas empresas han logrado mejorar
+            su presencia en línea y sus resultados.
+          </p>
 
-          <div className="mb-12">
-            <blockquote className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-              <p className="italic">
-                “The Macweb team designed a fantastic website for my restaurant
-                in New York. They completed it quickly and incorporated all of
-                our needs and our entire menu into the site. Their
-                professionalism and efficiency are second to none.”
+          {/* Testimonios */}
+          <div className="space-y-8">
+            <blockquote className="text-base text-gray-700 dark:text-gray-300">
+              <p className="italic mb-2">
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                quis quaerat obcaecati hic doloremque perferendis, natus tenetur
+                culpa reiciendis asperiores aspernatur iste aperiam, magni
+                reprehenderit et, nisi eius accusantium eveniet?”
               </p>
-              <footer className="mt-4 font-semibold">
-                Christian - New York, USA
-              </footer>
+              <footer className="font-semibold">Lorem - Ciudad, País</footer>
             </blockquote>
-          </div>
 
-          <div>
-            <blockquote className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-              <p className="italic">
-                “Crearon un sitio web para nuestra empresa metalúrgica en
-                Santiago. El proceso fue rápido y hicieron varias propuestas,
-                además el nuevo sitio ha aumentado nuestras consultas y ventas.
-                ¡Altamente recomendados!”
+            <blockquote className="text-base text-gray-700 dark:text-gray-300">
+              <p className="italic mb-2">
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                quis quaerat obcaecati hic doloremque perferendis, natus tenetur
+                culpa reiciendis asperiores aspernatur iste aperiam, magni
+                reprehenderit et, nisi eius accusantium eveniet?”
               </p>
-              <footer className="mt-4 font-semibold">
-                Rodrigo - Santiago, Chile
-              </footer>
+              <footer className="font-semibold">Lorem - Ciudad, País</footer>
+            </blockquote>
+
+            <blockquote className="text-base text-gray-700 dark:text-gray-300">
+              <p className="italic mb-2">
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                quis quaerat obcaecati hic doloremque perferendis, natus tenetur
+                culpa reiciendis asperiores aspernatur iste aperiam, magni
+                reprehenderit et, nisi eius accusantium eveniet?”
+              </p>
+              <footer className="font-semibold">Lorem - Ciudad, País</footer>
             </blockquote>
           </div>
         </div>
 
         {/* Imagen a la derecha */}
-        <div className="flex-1 mt-8 md:mt-0" />
+        <div className="flex-1 mt-8 md:mt-0">
+          <div className="flex-1 mt-8 md:mt-0 flex justify-center">
+            <Image
+              alt="Mockup"
+              className="rounded-xl shadow-2xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-2xl"
+              height={550}
+              src="/npc2.png" // Usa la ruta relativa desde la raíz
+              width={450} // Ajusta el tamaño según tus necesidades
+            />
+          </div>
+        </div>
       </section>
+      {/* Section de herramientas */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-semibold text-center mb-12 text-gray-900 dark:text-gray-100">
+            Lenguajes y Herramientas que Usamos
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            {/* Lenguaje 1 */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="JavaScript"
+                  height={48}
+                  src="/assets/javascript-logo.svg" // Agrega el logo de JavaScript aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  JavaScript
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                El lenguaje más popular para la web, utilizado para crear sitios
+                interactivos y dinámicos. Con JS, damos vida a las aplicaciones
+                web modernas.
+              </p>
+            </div>
+
+            {/* Lenguaje 2 */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="TypeScript"
+                  height={48}
+                  src="/assets/typescript-logo.svg" // Agrega el logo de TypeScript aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  TypeScript
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                TypeScript es un superset de JavaScript que agrega tipado
+                estático, lo que mejora la escalabilidad y el mantenimiento de
+                nuestras aplicaciones.
+              </p>
+            </div>
+
+            {/* Lenguaje 3 */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="React"
+                  height={48}
+                  src="/assets/react-logo.svg" // Agrega el logo de React aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  React
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                React es una librería de JavaScript para construir interfaces de
+                usuario dinámicas y reactivas. Usamos React para crear
+                aplicaciones web rápidas y escalables.
+              </p>
+            </div>
+
+            {/* Herramienta 1 */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="Node.js"
+                  height={48}
+                  src="/assets/nodejs-logo.svg" // Agrega el logo de Node.js aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  Node.js
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                Node.js es un entorno de ejecución de JavaScript en el servidor.
+                Nos permite construir aplicaciones backend eficientes y rápidas.
+              </p>
+            </div>
+
+            {/* Herramienta 2 */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="Tailwind CSS"
+                  height={48}
+                  src="/assets/tailwindcss-logo.svg" // Agrega el logo de Tailwind CSS aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  Tailwind CSS
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                Tailwind CSS es un framework de diseño que facilita la creación
+                de interfaces atractivas y responsivas con clases utilitarias.
+              </p>
+            </div>
+
+            {/* Herramienta 3 */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="PostgreSQL"
+                  height={48}
+                  src="/assets/postgresql-logo.svg" // Agrega el logo de PostgreSQL aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  PostgreSQL
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                PostgreSQL es una base de datos relacional de código abierto. La
+                usamos para almacenar datos de manera eficiente y escalable en
+                nuestras aplicaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <FloatingWhatsAppButton />
+
       <div className="flex flex-col items-center space-y-2 p-4">
         <span className="text-4xl font-semibold text-gray-800 animate-pulse">
           Creamos

@@ -2,6 +2,9 @@ import {
   UserGroupIcon,
   SparklesIcon,
   LightBulbIcon,
+  CodeBracketIcon,
+  GlobeAltIcon,
+  ChartBarIcon,
 } from "@heroicons/react/24/solid";
 
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
@@ -101,6 +104,120 @@ export default function BlogPage() {
             leftAlign={false} // Alineamos a la derecha
             title="Proyecto Personalizado"
           />
+        </div>
+      </section>
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
+            Cómo Trabajamos
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            {/* Paso 1 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-blue-100 dark:bg-blue-600">
+                <UserGroupIcon className="w-8 h-8 text-blue-600 dark:text-blue-100" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                Descubrimiento
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Comenzamos con una reunión para entender tus necesidades y
+                objetivos. Esta fase es clave para ofrecerte una solución
+                personalizada.
+              </p>
+            </div>
+
+            {/* Paso 2 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-green-100 dark:bg-green-600">
+                <SparklesIcon className="w-8 h-8 text-green-600 dark:text-green-100" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                Diseño y Desarrollo
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Creamos el diseño y desarrollamos la solución técnica basada en
+                lo que discutimos en la fase de descubrimiento.
+              </p>
+            </div>
+
+            {/* Paso 3 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-purple-100 dark:bg-purple-600">
+                <LightBulbIcon className="w-8 h-8 text-purple-600 dark:text-purple-100" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                Lanzamiento
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Después de las pruebas, lanzamos el proyecto y proporcionamos
+                soporte continuo para asegurar que todo funcione correctamente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
+            Proyectos Destacados
+          </h2>
+          <p className="text-lg text-center text-gray-600 dark:text-gray-300 mb-12">
+            Conoce algunos de nuestros proyectos más destacados y descubre cómo
+            podemos ayudarte a alcanzar tus objetivos digitales.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            {/* Proyecto 1 */}
+            <div className="flex flex-col items-center text-center p-6 bg-transparent border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-blue-100 dark:bg-blue-600">
+                <CodeBracketIcon className="w-8 h-8 text-blue-600 dark:text-blue-100" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                Proyecto Uno
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                nec fermentum nibh. Nullam non diam ut lorem vulputate pharetra.
+              </p>
+              <button className="px-6 py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors">
+                Acceder
+              </button>
+            </div>
+
+            {/* Proyecto 2 */}
+            <div className="flex flex-col items-center text-center p-6 bg-transparent border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-green-100 dark:bg-green-600">
+                <GlobeAltIcon className="w-8 h-8 text-green-600 dark:text-green-100" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                Proyecto Dos
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                nec fermentum nibh. Nullam non diam ut lorem vulputate pharetra.
+              </p>
+              <button className="px-6 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 transition-colors">
+                Acceder
+              </button>
+            </div>
+
+            {/* Proyecto 3 */}
+            <div className="flex flex-col items-center text-center p-6 bg-transparent border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-purple-100 dark:bg-purple-600">
+                <ChartBarIcon className="w-8 h-8 text-purple-600 dark:text-purple-100" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                Proyecto Tres
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                nec fermentum nibh. Nullam non diam ut lorem vulputate pharetra.
+              </p>
+              <button className="px-6 py-2 rounded-md text-white bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition-colors">
+                Acceder
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <div className="flex flex-col items-center space-y-2 p-4">

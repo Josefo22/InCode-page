@@ -168,6 +168,14 @@ export default function AboutUsPage() {
           para ayudarte a llevar tu empresa al siguiente nivel digital.
         </p>
       </section>
+      <div className="flex flex-col items-center space-y-2 p-4">
+        <span className="text-4xl font-semibold text-gray-800 animate-pulse">
+          Creamos
+        </span>
+        <span className="text-4xl font-semibold text-blue-600 animate-pulse">
+          Tus Ideas
+        </span>
+      </div>
     </div>
   );
 }
