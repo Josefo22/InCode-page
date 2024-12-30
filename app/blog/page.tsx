@@ -5,6 +5,8 @@ import {
   FaShieldAlt,
   FaCogs,
   FaThumbsUp,
+  FaArrowDown, // Flecha hacia abajo
+  FaArrowUp,   // Flecha hacia arriba
 } from "react-icons/fa"; // Íconos de react-icons
 
 import { title } from "@/components/primitives"; // Asegúrate de que 'title' esté correctamente importado
@@ -16,136 +18,132 @@ export default function AboutUsPage() {
       {/* Título principal */}
       <h1 className={title()}>Sobre Nosotros - InCode</h1>
 
-      {/* Sección ¿Quiénes Somos? */}
-      <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-3">
-          <FaUsers className="text-blue-500" size={28} />
-          ¿Quiénes Somos?
-        </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
-          En <strong>InCode</strong>, somos una empresa de consultoría y
-          desarrollo web especializada en crear soluciones digitales innovadoras
-          que transforman la manera en que las empresas interactúan con sus
-          clientes. Nuestra misión es ayudar a negocios de todos los tamaños a
-          crecer en el mundo digital a través de la tecnología, el diseño y la
-          estrategia.
-        </p>
+      {/* Sección 1: ¿Quiénes Somos? a la izquierda */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Sección izquierda con contenido */}
+        <section className="space-y-6 flex flex-col justify-center items-start">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-3">
+            <FaUsers className="text-blue-500" size={28} />
+            ¿Quiénes Somos?
+          </h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
+            En <strong>InCode</strong>, somos una empresa de consultoría y
+            desarrollo web especializada en crear soluciones digitales innovadoras
+            que transforman la manera en que las empresas interactúan con sus
+            clientes. Nuestra misión es ayudar a negocios de todos los tamaños a
+            crecer en el mundo digital a través de la tecnología, el diseño y la
+            estrategia.
+          </p>
+        </section>
+
+        {/* Flecha hacia abajo */}
+        <section className="flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <FaArrowDown className="text-blue-500 text-4xl" />
+          </div>
+        </section>
       </section>
 
-      {/* Sección Nuestra Visión */}
-      <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-3">
-          <FaLightbulb className="text-yellow-500" size={28} />
-          Nuestra Visión
-        </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
-          Nos vemos como un socio estratégico para empresas que buscan optimizar
-          sus procesos, mejorar su presencia en línea y ofrecer una experiencia
-          digital única a sus clientes. Creemos que la tecnología debe ser
-          accesible, útil y capaz de impulsar resultados tangibles.
-        </p>
+      {/* Sección 2: Nuestra Visión a la derecha */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Flecha hacia arriba (para el siguiente section) */}
+        <section className="flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <FaArrowDown className="text-yellow-500 text-4xl" />
+          </div>
+        </section>
+
+        {/* Sección derecha con contenido */}
+        <section className="space-y-6 flex flex-col justify-center items-start">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-3">
+            <FaLightbulb className="text-yellow-500" size={28} />
+            Nuestra Visión
+          </h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
+            Nos vemos como un socio estratégico para empresas que buscan optimizar
+            sus procesos, mejorar su presencia en línea y ofrecer una experiencia
+            digital única a sus clientes. Creemos que la tecnología debe ser
+            accesible, útil y capaz de impulsar resultados tangibles.
+          </p>
+        </section>
       </section>
+
       <FloatingWhatsAppButton />
+      
+      {/* Sección 3: Nuestro Enfoque a la izquierda */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Sección izquierda con contenido */}
+        <section className="space-y-6 flex flex-col justify-center items-start">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-3">
+            <FaCogs className="text-green-500" size={28} />
+            Nuestro Enfoque
+          </h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
+            Trabajamos de manera colaborativa con cada cliente, desde la fase
+            inicial de planificación hasta la ejecución final. Nuestros equipos se
+            centran en crear soluciones personalizadas, basadas en las necesidades
+            específicas de cada empresa, utilizando las últimas tecnologías
+            disponibles.
+          </p>
+        </section>
 
-      {/* Sección Nuestro Enfoque */}
-      <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-3">
-          <FaCogs className="text-green-500" size={28} />
-          Nuestro Enfoque
-        </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
-          Trabajamos de manera colaborativa con cada cliente, desde la fase
-          inicial de planificación hasta la ejecución final. Nuestros equipos se
-          centran en crear soluciones personalizadas, basadas en las necesidades
-          específicas de cada empresa, utilizando las últimas tecnologías
-          disponibles.
-        </p>
+        {/* Flecha hacia abajo */}
+        <section className="flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <FaArrowDown className="text-green-500 text-4xl" />
+          </div>
+        </section>
       </section>
 
-      {/* Sección Lo que Hacemos */}
-      <section className="space-y-8">
-        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-3">
-          <FaLaptopCode className="text-blue-600" size={28} />
-          Lo que Hacemos
-        </h3>
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
-          <li className="hover:text-blue-500 transition-colors duration-300">
-            <strong>Desarrollo Web Personalizado:</strong> Creamos aplicaciones
-            web a medida, optimizadas y escalables para mejorar la experiencia
-            de usuario y ayudar a las empresas a alcanzar sus objetivos.
-          </li>
-          <li className="hover:text-blue-500 transition-colors duration-300">
-            <strong>Consultoría y Estrategia Digital:</strong> Proporcionamos
-            asesoramiento experto para mejorar la presencia digital de las
-            empresas mediante estrategias tecnológicas eficaces que impulsan su
-            competitividad.
-          </li>
-          <li className="hover:text-blue-500 transition-colors duration-300">
-            <strong>Diseño de Interfaces de Usuario:</strong> Nos especializamos
-            en la creación de interfaces atractivas y funcionales que mejoran la
-            interacción del usuario con las plataformas digitales.
-          </li>
-          <li className="hover:text-blue-500 transition-colors duration-300">
-            <strong>Optimización de Procesos y Automatización:</strong> Ayudamos
-            a las empresas a optimizar sus procesos internos a través de
-            soluciones tecnológicas que mejoran la eficiencia y reducen los
-            costos operativos.
-          </li>
-          <li className="hover:text-blue-500 transition-colors duration-300">
-            <strong>Soporte Continuo y Mantenimiento:</strong> Ofrecemos soporte
-            y mantenimiento para garantizar que las soluciones tecnológicas
-            sigan funcionando al máximo, adaptándose a las necesidades
-            cambiantes del negocio.
-          </li>
-        </ul>
+      {/* Sección 4: Lo que Hacemos a la derecha */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Flecha hacia arriba (para el siguiente section) */}
+        <section className="flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <FaArrowDown className="text-blue-600 text-4xl" />
+          </div>
+        </section>
+
+        {/* Sección derecha con contenido */}
+        <section className="space-y-8 flex flex-col justify-center items-start">
+          <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-3">
+            <FaLaptopCode className="text-blue-600" size={28} />
+            Lo que Hacemos
+          </h3>
+          <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+            <li className="hover:text-blue-500 transition-colors duration-300">
+              <strong>Desarrollo Web Personalizado:</strong> Creamos aplicaciones
+              web a medida, optimizadas y escalables para mejorar la experiencia
+              de usuario y ayudar a las empresas a alcanzar sus objetivos.
+            </li>
+            <li className="hover:text-blue-500 transition-colors duration-300">
+              <strong>Consultoría y Estrategia Digital:</strong> Proporcionamos
+              asesoramiento experto para mejorar la presencia digital de las
+              empresas mediante estrategias tecnológicas eficaces que impulsan su
+              competitividad.
+            </li>
+            <li className="hover:text-blue-500 transition-colors duration-300">
+              <strong>Diseño de Interfaces de Usuario:</strong> Nos especializamos
+              en la creación de interfaces atractivas y funcionales que mejoran la
+              interacción del usuario con las plataformas digitales.
+            </li>
+            <li className="hover:text-blue-500 transition-colors duration-300">
+              <strong>Optimización de Procesos y Automatización:</strong> Ayudamos
+              a las empresas a optimizar sus procesos internos a través de
+              soluciones tecnológicas que mejoran la eficiencia y reducen los
+              costos operativos.
+            </li>
+            <li className="hover:text-blue-500 transition-colors duration-300">
+              <strong>Soporte Continuo y Mantenimiento:</strong> Ofrecemos soporte
+              y mantenimiento para garantizar que las soluciones tecnológicas
+              sigan funcionando al máximo, adaptándose a las necesidades
+              cambiantes del negocio.
+            </li>
+          </ul>
+        </section>
       </section>
 
-      {/* Sección Nuestro Equipo */}
-      <section className="space-y-8">
-        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-3">
-          <FaUsers className="text-purple-500" size={28} />
-          Nuestro Equipo
-        </h3>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
-          Contamos con un equipo altamente calificado de desarrolladores,
-          diseñadores, consultores y expertos en tecnología, todos comprometidos
-          con el éxito de nuestros clientes. Cada miembro de nuestro equipo
-          aporta conocimientos y experiencia en su campo, trabajando juntos para
-          lograr soluciones efectivas y de alta calidad.
-        </p>
-      </section>
-
-      {/* Sección Nuestros Valores */}
-      <section className="space-y-8">
-        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-3">
-          <FaShieldAlt className="text-red-500" size={28} />
-          Nuestros Valores
-        </h3>
-        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
-          <li>
-            <strong>Innovación:</strong> Estamos siempre en busca de las últimas
-            tendencias tecnológicas para ofrecer soluciones innovadoras que
-            marquen la diferencia.
-          </li>
-          <li>
-            <strong>Compromiso:</strong> Nos dedicamos a entregar productos de
-            alta calidad, cumpliendo con los plazos establecidos y superando las
-            expectativas de nuestros clientes.
-          </li>
-          <li>
-            <strong>Colaboración:</strong> Trabajamos de la mano con nuestros
-            clientes para asegurarnos de que cada proyecto esté alineado con sus
-            objetivos y necesidades.
-          </li>
-          <li>
-            <strong>Transparencia:</strong> Mantenemos una comunicación abierta
-            y clara durante todo el proceso, asegurándonos de que nuestros
-            clientes siempre estén informados y satisfechos.
-          </li>
-        </ul>
-      </section>
-
-      {/* Sección Por Qué Elegir InCode */}
+      {/* Última sección sin flecha */}
       <section className="space-y-8">
         <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-3">
           <FaThumbsUp className="text-teal-500" size={28} />
@@ -168,6 +166,8 @@ export default function AboutUsPage() {
           para ayudarte a llevar tu empresa al siguiente nivel digital.
         </p>
       </section>
+      
+
       <div className="flex flex-col items-center space-y-2 p-4">
         <span className="text-4xl font-semibold text-gray-800 animate-pulse">
           Creamos

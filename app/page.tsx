@@ -98,10 +98,10 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <Image
                   alt="Sitio Institucional"
+                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                   height={48}
                   src="/Logo Incode.jpg"
                   width={48}
-                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                 />
                 <h3 className="text-2xl font-bold">Sitio Institucional</h3>
               </div>
@@ -126,10 +126,10 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <Image
                   alt="Landing Page"
+                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                   height={48}
                   src="/Logo Incode.jpg"
                   width={48}
-                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                 />
                 <h3 className="text-2xl font-bold">Landing Page</h3>
               </div>
@@ -152,10 +152,10 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <Image
                   alt="Tienda Online"
+                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                   height={48}
                   src="/Logo Incode.jpg"
                   width={48}
-                  className="rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-transform duration-300 ease-in-out"
                 />
                 <h3 className="text-2xl font-bold">Tienda Online</h3>
               </div>
@@ -255,32 +255,38 @@ export default function Home() {
           <div className="space-y-8">
             <blockquote className="text-base text-gray-700 dark:text-gray-300">
               <p className="italic mb-2">
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quis quaerat obcaecati hic doloremque perferendis, natus tenetur
-                culpa reiciendis asperiores aspernatur iste aperiam, magni
-                reprehenderit et, nisi eius accusantium eveniet?”
+                “InCode transformó nuestra presencia digital. Gracias a su
+                enfoque profesional y su atención al detalle, nuestra página web
+                ahora refleja la calidad de nuestros servicios y hemos visto un
+                aumento significativo en las consultas de clientes.”
               </p>
-              <footer className="font-semibold">Lorem - Ciudad, País</footer>
+              <footer className="font-semibold">
+                Carlos Gómez - Bogotá, Colombia
+              </footer>
             </blockquote>
 
             <blockquote className="text-base text-gray-700 dark:text-gray-300">
               <p className="italic mb-2">
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quis quaerat obcaecati hic doloremque perferendis, natus tenetur
-                culpa reiciendis asperiores aspernatur iste aperiam, magni
-                reprehenderit et, nisi eius accusantium eveniet?”
+                “Trabajar con InCode fue una experiencia increíble. Nos ayudaron
+                a diseñar y desarrollar una plataforma a medida que ha mejorado
+                nuestra eficiencia operativa. El soporte que nos dieron siempre
+                fue rápido y profesional.”
               </p>
-              <footer className="font-semibold">Lorem - Ciudad, País</footer>
+              <footer className="font-semibold">
+                Ana Martínez - Santiago, Chile
+              </footer>
             </blockquote>
 
             <blockquote className="text-base text-gray-700 dark:text-gray-300">
               <p className="italic mb-2">
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quis quaerat obcaecati hic doloremque perferendis, natus tenetur
-                culpa reiciendis asperiores aspernatur iste aperiam, magni
-                reprehenderit et, nisi eius accusantium eveniet?”
+                “InCode helped us revamp our website, making it faster and more
+                user-friendly. Their team attention to detail and dedication
+                to understanding our business needs were impressive. Highly
+                recommend them!”
               </p>
-              <footer className="font-semibold">Lorem - Ciudad, País</footer>
+              <footer className="font-semibold">
+              Oliver Blake - Chicago, USA
+              </footer>
             </blockquote>
           </div>
         </div>
@@ -363,6 +369,66 @@ export default function Home() {
                 React es una librería de JavaScript para construir interfaces de
                 usuario dinámicas y reactivas. Usamos React para crear
                 aplicaciones web rápidas y escalables.
+              </p>
+            </div>
+
+            {/* Lenguaje 4 (PHP) */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="PHP"
+                  height={48}
+                  src="./Logos/php.svg" // Agrega el logo de PHP aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  PHP
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                PHP es un lenguaje de programación del lado del servidor,
+                utilizado principalmente para crear aplicaciones web dinámicas.
+                Es muy común en el desarrollo de sitios y sistemas.
+              </p>
+            </div>
+
+            {/* Lenguaje 5 (Python) */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="Python"
+                  height={48}
+                  src="./Logos/python.svg" // Agrega el logo de Python aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  Python
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                Python es un lenguaje de programación versátil y fácil de
+                aprender, utilizado tanto para desarrollo web como para
+                aplicaciones científicas, automatización y análisis de datos.
+              </p>
+            </div>
+
+            {/* Lenguaje 6 (Java) */}
+            <div className="border-l-4 border-blue-500 pl-6 py-6 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              <div className="flex items-center gap-4">
+                <Image
+                  alt="Java"
+                  height={48}
+                  src="./Logos/java.svg" // Agrega el logo de Java aquí
+                  width={48}
+                />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  Java
+                </h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300">
+                Java es un lenguaje de programación orientado a objetos,
+                utilizado principalmente en aplicaciones empresariales, móviles
+                y sistemas backend.
               </p>
             </div>
 

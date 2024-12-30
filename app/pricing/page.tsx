@@ -93,110 +93,110 @@ function ProjectCard({
   );
 }
 
-// Projects Data with imageUrl
+// Projects Data with imageUrl and random locations
 const projects = [
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Dog solution",
+    category: "Pagina Web",
+    location: "Nueva York, Estados Unidos", // Ciudad de Latinoamérica
     link: "#",
     imageUrl: "./Mockups/WebMockup8", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Tienda Online",
-    location: "Medellín, Antioquia",
+    name: "Hb Juridicos",
+    category: "Sitio Corporativo",
+    location: "Lima, Perú", // Ciudad de Latinoamérica
     link: "#",
     imageUrl: "./Mockups/smartmockups_m0oaalts", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Montique cleaning",
+    category: "Pagina web",
+    location: "Nueva York, Estados Unidos", // Ciudad de Latinoamérica
     link: "#",
     imageUrl: "./Mockups/smartmockups_m0oaaxwa", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Stx",
+    category: "Aplicacion web",
+    location: "Ciudad de México, México", // Ciudad de Latinoamérica
     link: "#",
     imageUrl: "./Mockups/smartmockups_m0oabj2a", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Carlos bauton",
+    category: "Pagina web",
+    location: "Bogotá, Colombia", // Ciudad de Latinoamérica
     link: "#",
     imageUrl: "./Mockups/smartmockups_m0oabue8-_1_", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Digital tree",
+    category: "Marketing web",
+    location: "Medellín, Colombia", // Ciudad de Latinoamérica
     link: "#",
     imageUrl: "./Mockups/smartmockups_m0obi0k4-_1_", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Pintustol",
+    category: "Pagina web",
+    location: "Buenos Aires, Argentina", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup1", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Neomark",
+    category: "Marketing web",
+    location: "Santiago, Chile", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup10", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Tenchi",
+    category: "Tienda online",
+    location: "Bogota, Colombia", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup11", // Sin extensión
   },
   {
-    name: "Lorem",
+    name: "Smarttev",
     category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    location: "Medellin, Colombia", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup2", // Sin extensión
   },
   {
-    name: "Lorem",
+    name: "Gaspa fills",
     category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    location: "Barcelona, España", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup3", // Sin extensión
   },
   {
-    name: "Lorem",
+    name: "Mecaniques adam s.l",
     category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    location: "Chicago, Estados Unidos", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup4", // Sin extensión
   },
   {
-    name: "Lorem",
+    name: "Peixos chani",
     category: "Landing Page",
-    location: "Medellín, Antioquia",
+    location: "Barranquilla, Colombia", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup5", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "Rkt",
+    category: "Marketing digital",
+    location: "Medellin, Colombia", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup6", // Sin extensión
   },
   {
-    name: "Lorem",
-    category: "Sitio Corporativo",
-    location: "Medellín, Antioquia",
+    name: "knickerbocker baguel",
+    category: "Pagina web",
+    location: "", // Ciudad de habla inglesa
     link: "#",
     imageUrl: "./Mockups/WebMockup7", // Sin extensión
   },
