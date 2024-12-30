@@ -92,9 +92,9 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/Josefo22",
-    instagram: "https://instagram.com/InCode", // Cambia por el Instagram real
-    tiktok: "https://tiktok.com/@InCode", // Cambia por el TikTok real
-    facebook: "https://facebook.com/InCode", // Cambia por el Facebook real
+    instagram: "https://www.instagram.com/incode22/", // Cambia por el Instagram real
+    tiktok: "https://www.tiktok.com/@incode22?is_from_webapp=1&sender_device=pc", // Cambia por el TikTok real
+    facebook: "https://www.facebook.com/profile.php?id=61563949780820&rdid=yRGz0d8SNNXPuGm0", // Cambia por el Facebook real
     docs: "https://wa.me/573022891396",
     discord: "",
     sponsor: "",
