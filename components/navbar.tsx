@@ -17,7 +17,7 @@ import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 import { useState } from "react"; // Para manejar el estado del idioma
-
+import LanguageContext from "../components/LanguageContext";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon, SearchIcon } from "@/components/icons";
@@ -92,13 +92,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <NavbarItem>
-          <Button
-            className="text-sm bg-blue-500 text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 rounded-lg py-2 px-4 transition-all duration-300 transform hover:scale-105 active:scale-95"
-            size="sm"
-            onClick={toggleLanguage}
-          >
-            {language === "es" ? "EN" : "ES"}
-          </Button>
+        <LanguageContext />
         </NavbarItem>
       </NavbarContent>
 
@@ -108,13 +102,7 @@ export const Navbar = () => {
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
-        <Button
-          className="text-sm bg-blue-500 text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 rounded-lg py-2 px-4 transition-all duration-300 transform hover:scale-105 active:scale-95"
-          size="sm"
-          onClick={toggleLanguage}
-        >
-          {language === "es" ? "EN" : "ES"}
-        </Button>
+        <LanguageContext />
         <NavbarMenuToggle />
       </NavbarContent>
 

@@ -1,0 +1,84 @@
+{
+    "welcome": "Bienvenido a InCode",
+    "description": "Desarrollo Web a Medida",
+    "intro": "Somos expertos en diseño web, dedicados a crear sitios atractivos y modernos que capturan la esencia de cada negocio. Con años de experiencia en el sector, ofrecemos soluciones personalizadas que combinan funcionalidad y estética, garantizando una excelente experiencia de usuario.",
+    "quoteNow": "Cotizar Ahora",
+    "socialLinks": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    },
+    "ourServices": "Nuestros Servicios",
+    "institutionalSite": {
+      "title": "Sitio Institucional",
+      "description": "Creamos sitios web institucionales que reflejan la identidad y valores de su organización. Nos aseguramos de que su sitio institucional comunique de manera efectiva su misión, visión y servicios, proporcionando una experiencia de usuario óptima.",
+      "moreInfo": "Ver más"
+    },
+    "landingPage": {
+      "title": "Landing Page",
+      "description": "Desarrollamos páginas de aterrizaje y sitios de una sola página, optimizados para conversiones y campañas de marketing.",
+      "moreInfo": "Ver más"
+    },
+    "onlineStore": {
+      "title": "Tienda Online",
+      "description": "Soluciones completas para tiendas online y plataformas de ecommerce, con un enfoque en la experiencia de compra y seguridad.",
+      "moreInfo": "Ver más"
+    },
+    "successCases": {
+      "title": "CASOS DE ÉXITO",
+      "portfolio": "Porfolio web",
+      "description": "Entendemos que tu presencia en línea es crucial para el éxito de tu negocio. Estamos aquí para ayudarte a mejorar tu sitio web o lanzar uno nuevo.",
+      "provenExperience": "Experiencia Comprobada",
+      "attractiveDesign": "Diseño Atractivo",
+      "constantOptimization": "Optimización Constante",
+      "viewPortfolio": "Ver Portfolio"
+    },
+    "clientFeedback": {
+      "title": "Estamos en cada detalle",
+      "clientsSay": "Nuestros clientes lo dicen",
+      "testimonial1": {
+        "quote": "InCode transformó nuestra presencia digital. Gracias a su enfoque profesional y su atención al detalle, nuestra página web ahora refleja la calidad de nuestros servicios y hemos visto un aumento significativo en las consultas de clientes.",
+        "author": "Carlos Gómez - Bogotá, Colombia"
+      },
+      "testimonial2": {
+        "quote": "Trabajar con InCode fue una experiencia increíble. Nos ayudaron a diseñar y desarrollar una plataforma a medida que ha mejorado nuestra eficiencia operativa. El soporte que nos dieron siempre fue rápido y profesional.",
+        "author": "Ana Martínez - Santiago, Chile"
+      },
+      "testimonial3": {
+        "quote": "InCode helped us revamp our website, making it faster and more user-friendly. Their team attention to detail and dedication to understanding our business needs were impressive. Highly recommend them!",
+        "author": "Oliver Blake - Chicago, USA"
+      }
+    },
+    "toolsAndTechnologies": {
+      "title": "Lenguajes y Herramientas que Usamos",
+      "javascript": {
+        "name": "JavaScript",
+        "description": "El lenguaje más popular para la web, utilizado para crear sitios interactivos y dinámicos. Con JS, damos vida a las aplicaciones web modernas."
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "description": "TypeScript es un superset de JavaScript que agrega tipado estático, lo que mejora la escalabilidad y el mantenimiento de nuestras aplicaciones."
+      },
+      "react": {
+        "name": "React",
+        "description": "React es una librería de JavaScript para construir interfaces de usuario dinámicas y reactivas. Usamos React para crear aplicaciones web rápidas y escalables."
+      },
+      "php": {
+        "name": "PHP",
+        "description": "PHP es un lenguaje de programación del lado del servidor, utilizado principalmente para crear aplicaciones web dinámicas. Es muy común en el desarrollo de sitios y sistemas."
+      },
+      "python": {
+        "name": "Python",
+        "description": "Python es un lenguaje de programación versátil y fácil de aprender, utilizado tanto para desarrollo web como para aplicaciones científicas, automatización y análisis de datos."
+      },
+      "java": {
+        "name": "Java",
+        "description": "Java es un lenguaje de programación orientado a objetos, utilizado principalmente en aplicaciones empresariales, móviles y sistemas backend."
+      },
+      "nodejs": {
+        "name": "Node.js",
+        "description": "Node.js es un entorno de ejecución de JavaScript en el servidor. Nos permite construir aplicaciones backend eficientes y rápidas."
+      }
+    }
+  }
+  
