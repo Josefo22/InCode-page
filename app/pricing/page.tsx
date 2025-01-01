@@ -1,4 +1,5 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+
 import { title } from "@/components/primitives";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 
