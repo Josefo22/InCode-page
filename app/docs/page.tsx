@@ -179,9 +179,9 @@ function FeaturedProjects() {
   const projects = [
     {
       icon: CodeBracketIcon,
-      title: "Proyecto Uno",
+      title: "Proyectos POS",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec fermentum nibh. Nullam non diam ut lorem vulputate pharetra.",
+        "Desarrollo de sistemas de punto de venta (POS) completos con gestión de inventarios, ventas y facturación, adaptados a las necesidades del cliente.",
       bgColor: "bg-blue-50 dark:bg-blue-900/50", // Fondo más sutil
       textColor: "text-blue-600 dark:text-blue-400", // Texto adaptado a ambos modos
       buttonColor:
@@ -189,9 +189,9 @@ function FeaturedProjects() {
     },
     {
       icon: GlobeAltIcon,
-      title: "Proyecto Dos",
+      title: "Proyectos de IA",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec fermentum nibh. Nullam non diam ut lorem vulputate pharetra.",
+        "Implementación de soluciones de inteligencia artificial para tareas como análisis predictivo, procesamiento de lenguaje natural y automatización.",
       bgColor: "bg-green-50 dark:bg-green-900/50", // Fondo más sutil
       textColor: "text-green-600 dark:text-green-400", // Texto adaptado
       buttonColor:
@@ -199,9 +199,9 @@ function FeaturedProjects() {
     },
     {
       icon: ChartBarIcon,
-      title: "Proyecto Tres",
+      title: "Dashboard en Power BI",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec fermentum nibh. Nullam non diam ut lorem vulputate pharetra.",
+        "Creación de dashboards interactivos y personalizados en Power BI para visualizar datos clave y tomar decisiones estratégicas.",
       bgColor: "bg-purple-50 dark:bg-purple-900/50", // Fondo sutil
       textColor: "text-purple-600 dark:text-purple-400", // Texto adaptado
       buttonColor:

@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { FaGlobe } from "react-icons/fa"; // Icono del globo
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { FaGlobe } from 'react-icons/fa'; // Icono del globo
 
 const LanguageContext: React.FC = () => {
   const { i18n } = useTranslation();
   const [isEnglish, setIsEnglish] = useState(true); // Predeterminado es inglés
 
   const toggleLanguage = () => {
-    const newLanguage = isEnglish ? "es" : "en"; // Alternar entre los idiomas
+    const newLanguage = isEnglish ? 'es' : 'en'; // Alternar entre los idiomas
     i18n.changeLanguage(newLanguage);
     setIsEnglish(!isEnglish); // Cambiar el estado del idioma
   };
@@ -29,10 +29,12 @@ const LanguageContext: React.FC = () => {
           {/* Círculo que se mueve */}
           <div
             className={`w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center transition-all duration-1000 ease-in-out transform ${
-              isEnglish ? "translate-x-0" : "translate-x-8"
+              isEnglish ? 'translate-x-0' : 'translate-x-8'
             }`}
           >
-            <span className="font-bold text-blue-500 text-xs">{isEnglish ? "EN" : "ES"}</span>
+            <span className="font-bold text-blue-500 text-xs">
+              {isEnglish ? 'EN' : 'ES'}
+            </span>
           </div>
         </div>
 

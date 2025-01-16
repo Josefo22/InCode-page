@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Navbar as NextUINavbar,
@@ -8,36 +8,36 @@ import {
   NavbarBrand,
   NavbarItem,
   NavbarMenuItem,
-} from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
-import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
-import { link as linkStyles } from "@nextui-org/theme";
-import NextLink from "next/link";
-import clsx from "clsx";
-import { useState } from "react"; // Para manejar el estado del idioma
-import LanguageContext from "../components/LanguageContext";
-import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, SearchIcon } from "@/components/icons";
+} from '@nextui-org/navbar';
+import { Button } from '@nextui-org/button';
+import { Kbd } from '@nextui-org/kbd';
+import { Link } from '@nextui-org/link';
+import { Input } from '@nextui-org/input';
+import { link as linkStyles } from '@nextui-org/theme';
+import NextLink from 'next/link';
+import clsx from 'clsx';
+import { useState } from 'react'; // Para manejar el estado del idioma
+import LanguageContext from '../components/LanguageContext';
+import { siteConfig } from '@/config/site';
+import { ThemeSwitch } from '@/components/theme-switch';
+import { GithubIcon, SearchIcon } from '@/components/icons';
 
 export const Navbar = () => {
-  const [language, setLanguage] = useState("es"); // Estado para manejar el idioma
+  const [language, setLanguage] = useState('es'); // Estado para manejar el idioma
 
   const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "es" ? "en" : "es"));
+    setLanguage((prevLanguage) => (prevLanguage === 'es' ? 'en' : 'es'));
   };
 
   const searchInput = (
     <Input
       aria-label="Search"
       classNames={{
-        inputWrapper: "bg-default-100",
-        input: "text-sm",
+        inputWrapper: 'bg-default-100',
+        input: 'text-sm',
       }}
       endContent={
-        <Kbd className="hidden lg:inline-block" keys={["command"]}>
+        <Kbd className="hidden lg:inline-block" keys={['command']}>
           K
         </Kbd>
       }
@@ -55,7 +55,7 @@ export const Navbar = () => {
       {/* Navbar Brand (Logo) */}
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href={""}>
+          <NextLink className="flex justify-start items-center gap-1" href={''}>
             <p className="font-bold text-inherit">InCode</p>
           </NextLink>
         </NavbarBrand>
@@ -66,8 +66,8 @@ export const Navbar = () => {
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  linkStyles({ color: 'foreground' }),
+                  'data-[active=true]:text-primary data-[active=true]:font-medium',
                 )}
                 color="foreground"
                 href={item.href}
@@ -92,7 +92,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <NavbarItem>
-        <LanguageContext />
+          <LanguageContext />
         </NavbarItem>
       </NavbarContent>
 
@@ -114,10 +114,10 @@ export const Navbar = () => {
               <Link
                 color={
                   index === 2
-                    ? "primary"
+                    ? 'primary'
                     : index === siteConfig.navItems.length - 1
-                      ? "danger"
-                      : "foreground"
+                      ? 'danger'
+                      : 'foreground'
                 }
                 href={item.href}
                 size="lg"
@@ -134,10 +134,10 @@ export const Navbar = () => {
               <Link
                 color={
                   index === 2
-                    ? "primary"
+                    ? 'primary'
                     : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
+                      ? 'danger'
+                      : 'foreground'
                 }
                 href={item.href}
                 size="lg"

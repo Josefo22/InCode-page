@@ -280,12 +280,12 @@ export default function Home() {
             <blockquote className="text-base text-gray-700 dark:text-gray-300">
               <p className="italic mb-2">
                 “InCode helped us revamp our website, making it faster and more
-                user-friendly. Their team attention to detail and dedication
-                to understanding our business needs were impressive. Highly
+                user-friendly. Their team attention to detail and dedication to
+                understanding our business needs were impressive. Highly
                 recommend them!”
               </p>
               <footer className="font-semibold">
-              Oliver Blake - Chicago, USA
+                Oliver Blake - Chicago, USA
               </footer>
             </blockquote>
           </div>

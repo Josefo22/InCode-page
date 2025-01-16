@@ -1,31 +1,35 @@
 /* eslint-disable prettier/prettier */
-"use client";
-import React, { useState } from "react";
+'use client';
+import React, { useState } from 'react';
 import {
   FaPhoneAlt,
   FaEnvelope,
   FaRegHandshake,
   FaClipboardList,
   FaLaptopCode,
-} from "react-icons/fa"; // Íconos para contacto
-import emailjs from "emailjs-com";
+} from 'react-icons/fa'; // Íconos para contacto
+import emailjs from 'emailjs-com';
 
-import { title } from "@/components/primitives"; // Asegúrate de que 'title' esté correctamente importado
-import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import { title } from '@/components/primitives'; // Asegúrate de que 'title' esté correctamente importado
+import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-    message: "",
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: '',
   });
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     const { id, value } = e.target;
 
     setFormData((prevData) => ({
@@ -50,22 +54,23 @@ const ContactPage = () => {
       };
 
       await emailjs.send(
-        "service_8tj6hl8", // Reemplaza con tu Service ID de EmailJS
-        "template_cb6zrrd", // Reemplaza con tu Template ID de EmailJS
+        'service_8tj6hl8', // Reemplaza con tu Service ID de EmailJS
+        'template_cb6zrrd', // Reemplaza con tu Template ID de EmailJS
         templateParams,
-        "0w41egYFbllAgbXRL" // Reemplaza con tu clave pública (User ID)
+        '0w41egYFbllAgbXRL', // Reemplaza con tu clave pública (User ID)
       );
 
       setSubmitted(true); // Muestra un mensaje de éxito
       setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: "",
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: '',
       });
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
-      console.error("Error al enviar el formulario:", error);
+      
       setError(true); // Muestra un mensaje de error
     }
   };
@@ -77,8 +82,8 @@ const ContactPage = () => {
         CONTACTO
       </h1>
 
-     {/* Sección Introducción */}
-     <section className="space-y-8">
+      {/* Sección Introducción */}
+      <section className="space-y-8">
         <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 text-center">
           <FaClipboardList
             className="inline-block text-blue-600 dark:text-blue-400"
@@ -141,8 +146,8 @@ const ContactPage = () => {
           mejor valor por tu inversión.
         </p>
       </section>
-       {/* Secciones Adicionales */}
-       <section className="space-y-8">
+      {/* Secciones Adicionales */}
+      <section className="space-y-8">
         <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 text-center">
           <FaLaptopCode
             className="inline-block text-yellow-600 dark:text-yellow-400"
@@ -272,8 +277,6 @@ const ContactPage = () => {
           )}
         </form>
       </section>
-
-     
 
       {/* Información de Contacto */}
       <section className="space-y-6 text-center px-4 sm:px-6 lg:px-8">

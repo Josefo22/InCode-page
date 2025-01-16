@@ -1,11 +1,11 @@
-"use client"; // Asegúrate de que este comentario esté al inicio del archivo
+'use client'; // Asegúrate de que este comentario esté al inicio del archivo
 
-import React, { useState, useEffect } from "react";
-import { FaWhatsapp } from "react-icons/fa"; // Si no tienes react-icons, instálalo con npm install react-icons
+import React, { useState, useEffect } from 'react';
+import { FaWhatsapp } from 'react-icons/fa'; // Si no tienes react-icons, instálalo con npm install react-icons
 
 const FloatingWhatsAppButton = () => {
   // Número de WhatsApp (pon aquí tu número real)
-  const phoneNumber = "3022891396";
+  const phoneNumber = '3022891396';
 
   // Estado para manejar la visibilidad del mensaje
   const [showMessage, setShowMessage] = useState(false);

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface CardProps {
   icon: React.ReactNode;
@@ -22,12 +22,14 @@ const Card: React.FC<CardProps> = ({
       className={`p-6 rounded-lg shadow-md border 
       bg-white/70 dark:bg-gray-800/60 
       border-gray-200 dark:border-gray-700 
-      ${fullWidth ? "w-full" : "w-auto"}
+      ${fullWidth ? 'w-full' : 'w-auto'}
       transition-colors duration-300`}
     >
       <div
         className={`flex ${
-          leftAlign ? "flex-col items-start" : "flex-col items-center text-center"
+          leftAlign
+            ? 'flex-col items-start'
+            : 'flex-col items-center text-center'
         }`}
       >
         <div className="mb-4">{icon}</div>
