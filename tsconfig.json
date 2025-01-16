@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",                             // Cambié es5 a es6 para mejorar compatibilidad moderna
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -8,12 +8,14 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "esnext",                           // Ya está configurado correctamente
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "allowSyntheticDefaultImports": true,        // Agregado para manejar mejor las importaciones sin exportación predeterminada
+    "skipDefaultLibCheck": true,                  // Agregado para evitar problemas con las declaraciones de tipos
     "plugins": [
       {
         "name": "next"
@@ -23,6 +25,12 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/types/**/*.d.ts"                       // Añadido para incluir los archivos de declaración de tipos personalizados
+  ],
   "exclude": ["node_modules"]
 }

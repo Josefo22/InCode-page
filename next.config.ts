@@ -1,4 +1,4 @@
-export default {
-  reactStrictMode: true,
-  swcMinify: true,
+module.exports = {
+  output: "standalone",
+  trailingSlash: true, // Útil para exportaciones estáticas.
 };
