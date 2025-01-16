@@ -1,4 +1,4 @@
 module.exports = {
-  output: "standalone",
-  trailingSlash: true, // Útil para exportaciones estáticas.
+  output: "standalone", // Esto es correcto para exportaciones estáticas.
+  trailingSlash: true, // Esto es útil si necesitas URL con barra final ("/").
 };
