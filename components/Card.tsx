@@ -46,10 +46,12 @@ const Card: React.FC<CardProps> = ({
         </ul>
       )}
       <button
-        className="mt-6 w-full py-2 text-white 
-        bg-blue-600 hover:bg-blue-700 
-        dark:bg-blue-500 dark:hover:bg-blue-600 
-        rounded-md transition-colors duration-300"
+        className="mt-6 w-full py-3 text-white 
+    bg-blue-600 hover:bg-blue-700 
+    dark:bg-blue-500 dark:hover:bg-blue-600 
+    rounded-md transition-all duration-300 
+    transform hover:scale-105 hover:translate-y-1 
+    shadow-md hover:shadow-xl font-semibold"
       >
         Solicitar Cotización
       </button>

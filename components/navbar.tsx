@@ -9,7 +9,6 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from '@nextui-org/navbar';
-import { Button } from '@nextui-org/button';
 import { Kbd } from '@nextui-org/kbd';
 import { Link } from '@nextui-org/link';
 import { Input } from '@nextui-org/input';
@@ -17,17 +16,15 @@ import { link as linkStyles } from '@nextui-org/theme';
 import NextLink from 'next/link';
 import clsx from 'clsx';
 import { useState } from 'react'; // Para manejar el estado del idioma
+
 import LanguageContext from '../components/LanguageContext';
+
 import { siteConfig } from '@/config/site';
 import { ThemeSwitch } from '@/components/theme-switch';
 import { GithubIcon, SearchIcon } from '@/components/icons';
 
 export const Navbar = () => {
-  const [language, setLanguage] = useState('es'); // Estado para manejar el idioma
-
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === 'es' ? 'en' : 'es'));
-  };
+  const [] = useState('es'); // Estado para manejar el idioma
 
   const searchInput = (
     <Input

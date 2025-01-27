@@ -2,35 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos de la barra de desplazamiento en el modo claro y oscuro */
+/* Estilos de la barra de desplazamiento */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
+  height: 12px;
 }
 
+/* Estilo de la pista de desplazamiento */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color del track en modo claro */
+  background: #f1f1f1; /* Color de fondo en modo claro */
   border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo del thumb (el controlador de la barra) */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color del thumb en modo claro */
+  background: linear-gradient(45deg, #4b6cb7, #182848); /* Color del thumb con gradiente */
   border-radius: 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Hover en el thumb */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Hover del thumb en modo claro */
+  background: #555; /* Color del thumb al pasar el cursor */
+  transform: scale(1.1); /* Agranda el thumb al hacer hover */
 }
 
-/* Cuando el tema es oscuro */
+/* Estilos para el modo oscuro */
 html.dark ::-webkit-scrollbar-track {
-  background: #2a2a2a; /* Fondo del track en modo oscuro */
+  background: #2a2a2a; /* Color de fondo del track en modo oscuro */
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-  background: #555; /* Color del thumb en modo oscuro */
+  background: linear-gradient(45deg, #2e3b4e, #192a3e); /* Color del thumb en modo oscuro con gradiente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
-  background: #333; /* Hover del thumb en modo oscuro */
+  background: #444; /* Hover del thumb en modo oscuro */
+  transform: scale(1.1); /* Agranda el thumb al hacer hover en modo oscuro */
 }

@@ -13,10 +13,12 @@ import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
 export default function BlogPage() {
   return (
     <div className="space-y-12">
+      {/* Título principal */}
       <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100">
         Servicios
       </h1>
 
+      {/* Sección introductoria */}
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
           En InCode, Tu Socio Digital
@@ -33,12 +35,12 @@ export default function BlogPage() {
         </p>
       </section>
 
+      {/* Servicios */}
       <section className="space-y-8">
         <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
           Servicios
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Espaciado entre cartas */}
           <Card
             description="Ofrecemos asesoramiento experto para optimizar tus procesos y sistemas mediante tecnología."
             features={[
@@ -81,13 +83,12 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Card para Proyecto Personalizado */}
+      {/* Proyecto personalizado */}
       <section className="space-y-8">
         <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
           Proyecto Personalizado
         </h3>
         <div className="w-full">
-          {/* Aseguramos que ocupe todo el ancho */}
           <Card
             description="Muchas veces una sola categoría no alcanza, quizás necesitás una tienda pero que además tenga integraciones externas, o una web institucional que tenga un catálogo de productos."
             features={[
@@ -107,74 +108,57 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* Cómo trabajamos */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
             Cómo Trabajamos
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Paso 1 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-blue-100 dark:bg-blue-600">
+            <Step
+              bgColor="bg-blue-100 dark:bg-blue-600"
+              description="Comenzamos con una reunión para entender tus necesidades y objetivos. Esta fase es clave para ofrecerte una solución personalizada."
+              icon={
                 <UserGroupIcon className="w-8 h-8 text-blue-600 dark:text-blue-100" />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Descubrimiento
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Comenzamos con una reunión para entender tus necesidades y
-                objetivos. Esta fase es clave para ofrecerte una solución
-                personalizada.
-              </p>
-            </div>
-
-            {/* Paso 2 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-green-100 dark:bg-green-600">
+              }
+              title="Descubrimiento"
+            />
+            <Step
+              bgColor="bg-green-100 dark:bg-green-600"
+              description="Creamos el diseño y desarrollamos la solución técnica basada en lo que discutimos en la fase de descubrimiento."
+              icon={
                 <SparklesIcon className="w-8 h-8 text-green-600 dark:text-green-100" />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Diseño y Desarrollo
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Creamos el diseño y desarrollamos la solución técnica basada en
-                lo que discutimos en la fase de descubrimiento.
-              </p>
-            </div>
-
-            {/* Paso 3 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-purple-100 dark:bg-purple-600">
+              }
+              title="Diseño y Desarrollo"
+            />
+            <Step
+              bgColor="bg-purple-100 dark:bg-purple-600"
+              description="Después de las pruebas, lanzamos el proyecto y proporcionamos soporte continuo para asegurar que todo funcione correctamente."
+              icon={
                 <LightBulbIcon className="w-8 h-8 text-purple-600 dark:text-purple-100" />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                Lanzamiento
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Después de las pruebas, lanzamos el proyecto y proporcionamos
-                soporte continuo para asegurar que todo funcione correctamente.
-              </p>
-            </div>
+              }
+              title="Lanzamiento"
+            />
           </div>
         </div>
       </section>
 
-      {/* Sección de Proyectos Destacados */}
+      {/* Proyectos Destacados */}
       <FeaturedProjects />
 
+      {/* Mensaje final y botón de WhatsApp */}
       <div className="flex flex-col items-center space-y-2 p-4">
-        <span className="text-4xl font-semibold text-gray-800 animate-pulse">
-          Creamos
-        </span>
-        <span className="text-4xl font-semibold text-blue-600 animate-pulse">
-          Tus Ideas
-        </span>
+        <div className="animated-text">
+          <span>Creamos</span>
+          <span>Tus Ideas</span>
+        </div>
       </div>
       <FloatingWhatsAppButton />
     </div>
   );
 }
 
+/* Componente FeaturedProjects */
 function FeaturedProjects() {
   const projects = [
     {
@@ -182,8 +166,8 @@ function FeaturedProjects() {
       title: 'Proyectos POS',
       description:
         'Desarrollo de sistemas de punto de venta (POS) completos con gestión de inventarios, ventas y facturación, adaptados a las necesidades del cliente.',
-      bgColor: 'bg-blue-50 dark:bg-blue-900/50', // Fondo más sutil
-      textColor: 'text-blue-600 dark:text-blue-400', // Texto adaptado a ambos modos
+      bgColor: 'bg-blue-50 dark:bg-blue-900/50',
+      textColor: 'text-blue-600 dark:text-blue-400',
       buttonColor:
         'bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600',
     },
@@ -192,8 +176,8 @@ function FeaturedProjects() {
       title: 'Proyectos de IA',
       description:
         'Implementación de soluciones de inteligencia artificial para tareas como análisis predictivo, procesamiento de lenguaje natural y automatización.',
-      bgColor: 'bg-green-50 dark:bg-green-900/50', // Fondo más sutil
-      textColor: 'text-green-600 dark:text-green-400', // Texto adaptado
+      bgColor: 'bg-green-50 dark:bg-green-900/50',
+      textColor: 'text-green-600 dark:text-green-400',
       buttonColor:
         'bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600',
     },
@@ -202,8 +186,8 @@ function FeaturedProjects() {
       title: 'Dashboard en Power BI',
       description:
         'Creación de dashboards interactivos y personalizados en Power BI para visualizar datos clave y tomar decisiones estratégicas.',
-      bgColor: 'bg-purple-50 dark:bg-purple-900/50', // Fondo sutil
-      textColor: 'text-purple-600 dark:text-purple-400', // Texto adaptado
+      bgColor: 'bg-purple-50 dark:bg-purple-900/50',
+      textColor: 'text-purple-600 dark:text-purple-400',
       buttonColor:
         'bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600',
     },
@@ -248,5 +232,28 @@ function FeaturedProjects() {
         </div>
       </div>
     </section>
+  );
+}
+
+interface StepProps {
+  icon: JSX.Element; // Para componentes React como íconos.
+  bgColor: string; // Para la clase CSS del fondo.
+  title: string; // Para el título.
+  description: string; // Para la descripción.
+}
+
+function Step({ icon, bgColor, title, description }: StepProps) {
+  return (
+    <div className="flex flex-col items-center text-center">
+      <div
+        className={`flex items-center justify-center w-16 h-16 mb-6 rounded-full ${bgColor}`}
+      >
+        {icon}
+      </div>
+      <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+        {title}
+      </h3>
+      <p className="text-gray-600 dark:text-gray-300">{description}</p>
+    </div>
   );
 }

@@ -1,13 +1,13 @@
-import { Link } from "@nextui-org/link";
-import { button as buttonStyles } from "@nextui-org/theme";
-import { FaFacebook, FaInstagram } from "react-icons/fa"; // Importando iconos de react-icons
-import Image from "next/image";
+import { Link } from '@nextui-org/link';
+import { button as buttonStyles } from '@nextui-org/theme';
+import { FaFacebook, FaInstagram } from 'react-icons/fa'; // Importando iconos de react-icons
+import Image from 'next/image';
 
-import { title, subtitle } from "../components/primitives";
-import { siteConfig } from "../config/site";
+import { title, subtitle } from '../components/primitives';
+import { siteConfig } from '../config/site';
 
-import "../styles/AnimatedText.css"; // Asegúrate de importar el archivo CSS
-import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import '../styles/AnimatedText.css'; // Asegúrate de importar el archivo CSS
+import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
 
 export default function Home() {
   return (
@@ -19,15 +19,20 @@ export default function Home() {
             In&nbsp;
           </span>
           <span
-            className={`${title({ color: "blue" })} text-6xl md:text-7xl font-bold`}
+            className={`${title({ color: 'blue' })} text-6xl md:text-7xl font-bold`}
           >
-            Code&nbsp;
+            Code
+            <span className="inline-block text-blue-500 text-6xl animate-bounce transform hover:scale-110 transition-all">
+              🚀
+            </span>
+            &nbsp;
           </span>
           <br />
+
           <span className={`${title()} text-4xl md:text-5xl font-semibold`}>
             Desarrollo Web a Medida
           </span>
-          <div className={`${subtitle({ class: "mt-4" })} text-xl md:text-2xl`}>
+          <div className={`${subtitle({ class: 'mt-4' })} text-xl md:text-2xl`}>
             Somos expertos en diseño web, dedicados a crear sitios atractivos y
             modernos que capturan la esencia de cada negocio. Con años de
             experiencia en el sector, ofrecemos soluciones personalizadas que
@@ -41,9 +46,9 @@ export default function Home() {
           <Link
             isExternal
             className={buttonStyles({
-              color: "primary",
-              radius: "full",
-              variant: "shadow",
+              color: 'primary',
+              radius: 'full',
+              variant: 'shadow',
             })}
             href={siteConfig.links.docs}
           >
@@ -54,21 +59,22 @@ export default function Home() {
 
       {/* Sección Redes Sociales */}
       <section className="flex flex-col items-start justify-center mt-16">
-        <div className={`${subtitle({ class: "mt-4" })} text-xl md:text-2xl`}>
+        <div className={`${subtitle({ class: 'mt-4' })} text-xl md:text-2xl`}>
           Redes Sociales
         </div>
         <div className="mt-8 flex flex-wrap gap-6 justify-start w-full">
           <Link
             isExternal
-            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all"
+            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:scale-105"
             href="https://www.facebook.com/share/15LEYde9e2/?mibextid=wwXIfr"
           >
             <FaFacebook size={24} />
             Facebook
           </Link>
+
           <Link
             isExternal
-            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all"
+            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:scale-105"
             href="https://www.instagram.com/incode22/"
           >
             <FaInstagram size={24} />
@@ -76,7 +82,7 @@ export default function Home() {
           </Link>
           <Link
             isExternal
-            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all"
+            className="flex items-center gap-2 p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:scale-105"
             href="https://www.tiktok.com/@incode22?_t=ZS-8sLtZrmPPWB&_r=1"
           >
             <FaInstagram size={20} />
@@ -113,7 +119,7 @@ export default function Home() {
               </p>
               <div className="text-center">
                 <Link
-                  className="text-blue-500 hover:text-blue-600 font-semibold"
+                  className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105 hover:translate-x-2 hover:shadow-lg hover:bg-blue-600"
                   href="#"
                 >
                   Ver más
@@ -139,7 +145,7 @@ export default function Home() {
               </p>
               <div className="text-center">
                 <Link
-                  className="text-blue-500 hover:text-blue-600 font-semibold"
+                  className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105 hover:translate-x-2 hover:shadow-lg hover:bg-blue-600"
                   href="#"
                 >
                   Ver más
@@ -166,7 +172,7 @@ export default function Home() {
               </p>
               <div className="text-center">
                 <Link
-                  className="text-blue-500 hover:text-blue-600 font-semibold"
+                  className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105 hover:translate-x-2 hover:shadow-lg hover:bg-blue-600"
                   href="#"
                 >
                   Ver más
@@ -195,29 +201,29 @@ export default function Home() {
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             <strong className="text-gray-900 dark:text-gray-100">
               Experiencia Comprobada:
-            </strong>{" "}
+            </strong>{' '}
             Nuestro equipo tiene años de experiencia en creación web y
             soluciones personalizadas.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             <strong className="text-gray-900 dark:text-gray-100">
               Diseño Atractivo:
-            </strong>{" "}
+            </strong>{' '}
             Creamos diseños que mejoran la experiencia de usuario y la
             conversión de visitas.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
             <strong className="text-gray-900 dark:text-gray-100">
               Optimización Constante:
-            </strong>{" "}
+            </strong>{' '}
             Nos aseguramos de mantener tu sitio optimizado y actualizado.
           </p>
           <div className="text-center">
             <Link
-              className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500 transition-colors"
+              className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105 hover:translate-x-2 hover:shadow-lg hover:bg-blue-600"
               href="#"
             >
-              Ver Portfolio
+              Ver portfolio
             </Link>
           </div>
         </div>
@@ -227,7 +233,7 @@ export default function Home() {
         <div className="flex-1 mt-8 md:mt-0">
           <Image
             alt="Mockup"
-            className="rounded-lg shadow-lg transform transition-all duration-500 ease-in-out hover:scale-105"
+            className="rounded-lg shadow-lg transform transition-all duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-2xl"
             height={550}
             src="/npc.png"
             width={450}
@@ -296,7 +302,7 @@ export default function Home() {
           <div className="flex-1 mt-8 md:mt-0 flex justify-center">
             <Image
               alt="Mockup"
-              className="rounded-xl shadow-2xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-2xl"
+              className="rounded-lg shadow-lg transform transition-all duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-2xl"
               height={550}
               src="/npc2.png" // Usa la ruta relativa desde la raíz
               width={450} // Ajusta el tamaño según tus necesidades

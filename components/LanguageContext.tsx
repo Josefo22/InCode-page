@@ -10,6 +10,7 @@ const LanguageContext: React.FC = () => {
 
   const toggleLanguage = () => {
     const newLanguage = isEnglish ? 'es' : 'en'; // Alternar entre los idiomas
+
     i18n.changeLanguage(newLanguage);
     setIsEnglish(!isEnglish); // Cambiar el estado del idioma
   };
@@ -17,14 +18,14 @@ const LanguageContext: React.FC = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <button
-        onClick={toggleLanguage}
-        className="flex items-center justify-center px-4 py-3 bg-gray-200 rounded-full shadow-lg hover:shadow-xl transition-all duration-500"
         aria-label="Switch Language"
+        className="flex items-center justify-center px-4 py-3 bg-gray-200 rounded-full shadow-lg hover:shadow-xl transition-all duration-500"
+        onClick={toggleLanguage}
       >
         {/* Contenedor del toggle */}
         <div className="relative w-14 h-8 rounded-full p-2- m-2- ">
           {/* Fondo azul fijo */}
-          <div className="absolute w-16 h-8 bg-blue-600 rounded-full"></div>
+          <div className="absolute w-16 h-8 bg-blue-600 rounded-full" />
 
           {/* Círculo que se mueve */}
           <div
@@ -40,7 +41,7 @@ const LanguageContext: React.FC = () => {
 
         {/* Icono del globo */}
         <span className="ml-3 text-sm font-medium text-gray-700">
-          <FaGlobe size={18} className="text-gray-600" />
+          <FaGlobe className="text-gray-600" size={18} />
         </span>
       </button>
     </div>

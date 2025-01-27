@@ -6,12 +6,15 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeInText 2s ease-in-out;
+  color: #333;
+  letter-spacing: 1px;
 }
 
 .animated-text span {
   opacity: 0;
-  animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards, colorChange 4s infinite alternate;
+  transform: translateY(20px);
 }
 
 .animated-text span:nth-child(1) {
@@ -33,11 +36,29 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInText {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #4B6CB7;
+  }
+  25% {
+    color: #A8D0E6;
+  }
+  50% {
+    color: #182848;
+  }
+  75% {
+    color: #F9F9F9;
+  }
+  100% {
+    color: #F25F5C;
   }
 }
