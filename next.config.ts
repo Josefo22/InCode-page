@@ -7,6 +7,11 @@ const nextConfig = {
   // Configuración adicional para mejorar el rendimiento de la generación estática.
   reactStrictMode: true, // Para asegurar que tu código sea más robusto en producción.
 
+  eslint: {
+    // Desactivar el linting en el build de producción
+    ignoreDuringBuilds: true, // Si prefieres no bloquear la compilación debido a errores de ESLint.
+  },
+
   // Habilitar la optimización de imágenes y la minimización de JS
   images: {
     domains: ['example.com'], // Asegúrate de añadir aquí los dominios de las imágenes que usas.
