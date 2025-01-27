@@ -1,15 +1,4 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    // Desactivar reglas específicas que podrían estar causando el problema
-    "no-unused-vars": "off", // Desactivar la regla de variables no utilizadas
-    "react/react-in-jsx-scope": "off", // Desactivar la regla que requiere React en scope
-    "react/prop-types": "off", // Desactivar la regla que exige los prop-types en los componentes React
-    "no-console": "off", // Desactivar la regla que prohíbe los console.log
-    "jsx-a11y/anchor-is-valid": "off" // Desactivar las reglas de accesibilidad relacionadas con anclas
-  }
-}
-{
   "$schema": "https://json.schemastore.org/eslintrc.json",
   "env": {
     "browser": false,
