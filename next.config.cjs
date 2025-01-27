@@ -1,4 +1,4 @@
-// next.config.js
+// next.config.cjs
 
 const nextConfig = {
   output: 'standalone', // Esto es correcto para exportaciones estáticas.
@@ -17,7 +17,7 @@ const nextConfig = {
     domains: ['example.com'], // Asegúrate de añadir aquí los dominios de las imágenes que usas.
   },
 
-  webpack(config: { module: { rules: { test: RegExp; use: string[] }[] } }) {
+  webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
